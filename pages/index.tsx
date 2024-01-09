@@ -59,8 +59,8 @@ function Reward() {
                 setIsDataLoading(true);
                 // Fetch data from API
                 const response = await axios.get<ApiResponse>(
-                    `https://api.rivera.money/xriv/users/0xDB0132c875eA7A00c4a6283da592ae6500205396`
-                    // `https://api.rivera.money/xriv/users/${address}`
+                    // `https://api.rivera.money/xriv/users/0xDB0132c875eA7A00c4a6283da592ae6500205396`
+                    `https://api.rivera.money/xriv/users/${address}`
                 );
                 const data = response.data;
 
